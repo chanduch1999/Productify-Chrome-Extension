@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Productify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/bootstrap.min.css" />
+    <script src="../js/front_page.js"></script>
+    <script src="../js/jquery.js"></script>
+    <style>
+        .col-md-6 {
+            padding:20px;
+        }
+        #blocked-num, #dictionary-num {
+            color:rgb(245, 229, 91);
+            font-weight: bolder;
+            background-color: rgb(126, 38, 38);
+            text-align: center;
+            border-radius:200px;
+        }
+        hr {
+            font-size:20px;
+        }
+        #articles2 {
+            color:rgb(245, 229, 91);
+            font-weight: bolder;
+            background-color: rgb(126, 38, 38);
+            text-align: center;
+            border-radius:20px;
+            width: 100 !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <h4 class="text-center" style="background-color:rgb(23, 57, 131);color: floralwhite;line-height: 30px; margin:0px !important; "><strong>PRODUCTIFY</strong><br></h4>
+    <div class="container">
+            
+            <a href= "dictionary.html" target="_blank"><img src="../icons/dictionary.png" alt="Saved Articles" style="height:25px;right:70px;position:absolute;"></a>
+            <a href= "articles.html" target="_blank"><img src="../icons/articles.png" alt="Saved Articles" style="height:25px;right:40px;position:absolute;"></a>
+            <a href="options.html" target="_blank"><img src="../icons/settings.png" alt="Settings page" style="height:25px;right:10px;position:absolute;"></a>
+        <div class="col-md-12 ">
+            <h5>Your Productivity Score: <span id="thiss"></span> </h5>
+            <div class="progress" id="adder">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" id="normalS" aria-valuemin="0" aria-valuemax="100"  ></div>
+                <!-- <span style="border: 1px solid pink; width: 100%;"> <span id="unique" ></span>  </span> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 col-sm-6" style="border:1px black solid;">
+                    <div id="blocked-num"></div>
+                    <br>
+                    <p class="text-center">Websites Blocked</p>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6" style="border:1px black solid;">
+                    <div id="dictionary-num"></div>
+                    <br>
+                    <p class="text-center">Words in Dictionary</p>
+                </div>
+            </div>
+            <div class="row">
+
+                
+                <div class="col-md-12 col-xs-12 col-sm-12" style="border:1px black solid;"><br>
+                    <div id="articles2"></div>
+
+                    <br>
+                    <p class="text-center">Articles Saved:</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
